@@ -1,0 +1,34 @@
+/* Estilos generales del body */
+body {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Alineación de texto centrada */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /* Sin decoración de texto subrayado */
+    color: white; /* Color de texto blanco */
+}
+
+/* Estilos para el contenedor de centrado */
+#centrar {
+    display: flex; /* Uso de flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+/* Estilos para el botón */
+#boton {
+    background-color: green; /* Color de fondo verde */
+    width: 100px; /* Ancho del botón de 100px */
+    padding: 5px; /* Espaciado interno de 5px */
+    border-radius: 20px; /* Borde redondeado */
+    text-align: center; /* Alineación de texto centrada */
+}
+
+/* Estilos para las imágenes */
+img {
+    height: 400px; /* Altura de la imagen de 400px */
+    width: auto; /* Ancho automático para mantener la proporción */
+}

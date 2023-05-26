@@ -1,0 +1,144 @@
+/* Se establece el color de fondo del body en negro */
+body{ 
+  background-color: black !important; 
+}
+
+/* Se establece un margen y borde redondeado para todos los elementos */
+*{
+  margin: 5px;
+  border-radius: 20px;  
+  font-family: 'Darumadrop One', cursive;
+}
+
+/* Se establecen las propiedades para el div "main" */
+.main {
+  /* Se establece un fondo oscuro */
+	background-color: rgb(24, 23, 23);
+  /* Se establece un ancho y alto fijo */
+  width: 1220px;
+  height: 700px;
+  /* Se centra el div horizontal y verticalmente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Se establece un borde que usa una imagen de gradiente */
+	border: 5px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  /* Se establece una animación para rotar el borde */
+	animation: 10s rotate linear infinite;
+}
+
+/* Se define la animación para rotar el borde */
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+/* Se define una propiedad personalizada para el ángulo del gradiente */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Se establecen las propiedades para el checkbox */
+input[type="checkbox"] {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+}
+
+input[type="checkbox"]:after {
+	content: 'Toggle Fill';
+	white-space: nowrap;
+	padding-left: 1.5em;
+}
+
+/* Se establece que al hacer clic en el checkbox, se cambia el borde a un relleno */
+input[type="checkbox"]:checked + div {
+	border-image-slice: 1 fill;
+}
+
+/* Se establecen las propiedades del body */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	background: #fff;
+}
+
+/* Se establecen las propiedades para el footer */
+footer {
+	text-align: center;
+	font-style: italic;
+}
+
+/* Se establecen las propiedades para la clase "pregunta" */
+.pregunta{
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Se establecen las propiedades para la clase "img" */
+.img{
+  background-color: blue;
+  width: 640px;
+  height: 350px;
+  margin-left: 280px;
+  margin-right: 280px;
+  background-image: url(../images/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+/* Se establecen las propiedades para el contenedor de las opciones */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+/* Se establecen las propiedades para las opciones */
+.opciones {
+  width: calc(50% - 10px);
+  height: 120px;
+	background-color: rgb(94, 92, 92);
+  text-align: center;
+  font-size: 35px;
+}
+/* Se establecen las propiedades para cuando el mouse está sobre las opciones */
+  .opciones:hover{
+    width: calc(50% - 10px);
+    height: 120px;
+	background-color: rgb(68, 67, 67);
+  
+    text-align: center;
+  }
+/* Los estilo para el contador */
+  #tiempo {
+    width: 185px;
+    height: 185px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    z-index: 9999;
+    background-image: url("../images/219903574-removebg-preview.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #volver{
+    border-radius: 0;!important
+  }

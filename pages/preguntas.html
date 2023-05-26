@@ -1,0 +1,50 @@
+<!-- Declaración del tipo de documento y el idioma -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración del juego para ser compatible con Internet Explorer -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuración de la vista en dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título del documento -->
+    <title>Document</title>
+    <!-- Enlace al archivo de estilos para las preguntas -->
+    <link rel="stylesheet" href="../styles/stylespreguntas.css">
+    <!-- Estilos importados desde Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor para el tiempo y el botón de salida -->
+    <div id="tiempo">
+        <button id="volver"><a href="gllider.html">Salir</a> </button>
+    </div>
+
+    <!-- Contenedor principal de la página -->
+    <div id="principalContainer">
+        <div class="main">
+            <div class="border">
+                <!-- Espacio reservado para la imagen relacionada con la pregunta -->
+                <div class="img"></div>
+                <!-- Espacio reservado para la pregunta -->
+                <div class="pregunta"></div>
+                <!-- Contenedor de las opciones -->
+                <div id="container">
+                    <div class="opciones" id="1"></div>
+                    <div class="opciones" id="2"></div>
+                    <div class="opciones" id="3"></div>
+                    <div class="opciones" id="4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script para el juego -->
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>
